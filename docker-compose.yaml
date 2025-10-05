@@ -1,0 +1,9 @@
+services:
+  zammad-workflows:
+    image: zammad-workflows
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    build: .
+    env_file:
+      - .env
