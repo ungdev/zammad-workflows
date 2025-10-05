@@ -1,4 +1,4 @@
-from server import app as application
+from server import app as application  # pylint: disable=unused-import
 
 # Optional: you can place WSGI middleware or other initialisation here.
 # Example for gunicorn:

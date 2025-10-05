@@ -1,10 +1,11 @@
+import threading
 from flask import Flask, request, jsonify
 from config import Config
 from auth import requires_auth
 from services.pdf import PDFGenerator
 from services.zammad import ZammadService
 from services.email import EmailService
-import threading
+
 
 try:
     Config.validate()
